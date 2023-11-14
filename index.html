@@ -16,41 +16,49 @@
   <script src="./main.js"></script>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="./image/ảnh/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
-      </a>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#About">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skill">PORTFOLIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+<body style="padding: 0px 150px 0px 150px; background-color: black;">
+  <style>
+    *{
+      margin: 0px ;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+  </style>
+  
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./image/ảnh/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   <div class="Introduce-yourself">
     <div class="Introduce-yourself-top">
       <span class="right">Hi !! MY NAME IS </span>
       <span class="left">HOÀNG ANH</span>
-      <h2 style="font-size: 30px; font-weight: bold;">I'AM GRAPHIC DESIGNER</h2>
-      <h3 style="font-size: 30px; font-weight: bold; margin-top: 50px;">Wish you have have a happy experience in my
+      <h2 style="font-size: 30px; font-weight: bold; margin-top: 20px;">I'AM GRAPHIC DESIGNER</h2>
+      <h3 style="font-size: 30px; font-weight: bold; margin-top: 90px;">Wish you have have a happy experience in my
         designer. hehe</h3>
     </div>
     <p></p>
     <div class="social-media">
-      <h4>Contact and follow me via Social Network pages</h4>
+      <h4 style="font-size: 15px;">Contact and follow me via Social Network pages</h4>
       <div class="flex">
-        <a href="">
+        <a href="https://www.facebook.com/profile.php?id=100053744499982">
           <i class="fa-brands fa-facebook"></i>
         </a>
         <a href="">
@@ -62,14 +70,51 @@
       </div>
     </div>
   </div>
-  <div id="About" class="img">
-    <img src="./image/ảnh/ảnh about me.jpg" alt="About Me">
+  <div id="About" >
+    <div class="img-left">
+      <img src="./image/ảnh/ảnh nền 1.jpg" alt="">
+    </div>
+    <ul class="intro">
+      <li>
+        <div class="icon">
+          <img src="./image/ảnh/logo.png" alt="" height="20" width="20">
+        </div>
+        <p>Nguyễn Hoàng Anh</p>
+      </li>
+      <li>
+        <div class="icon">
+          <i class="fa-solid fa-cake-candles"></i>
+        </div>
+        <p>30/10/2003</p>
+      </li>
+      <li>
+        <div class="icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <p>Ha Noi City</p>
+      </li>
+      <li>
+        <div class="icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <p>0921099371</p>
+      </li>
+      <li>
+        <div class="icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <p>Hoanganh2003@gmail.com</p>
+      </li>
+    </ul>
+    
   </div>
-  <div id="nen" class="img">
+  <div id="nen" class="img" style="position: relative;">
     <img src="./image/ảnh/ảnh nền.jpg" alt="Ảnh nền">
+    <img src="./image/ảnh/tải xuống.jpg" alt="" style="position: absolute; width: 400px;
+    height: 500px; opacity: 65%; top: 30px; right: 20px;">
   </div>
   <div id="skill" class="img">
-    <img src="./image/ảnh/ 4.jpg" alt="Skill">
+    <img src="./image/ảnh/ảnh 4.jpg" alt="Skill">
   </div>
   <div id="skill" class="img">
     <img src="./image/ảnh/ảnh 5.jpg" alt="Skill">
@@ -78,7 +123,7 @@
     <img src="./image/ảnh/ảnh 6.jpg" alt="Skill">
   </div>
   <div style="background-color: black; text-align: center;" id="contact">
-    <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: white;padding: 30px 0px;">CONTACT ME
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: white;padding: 30px 0px 50px 0px;">CONTACT ME
     </h1>
     <form action="">
       <div class="form-main" style="display: flex;width: 40%; margin: 0 auto; flex-wrap: wrap; justify-content: space-evenly;">
@@ -88,18 +133,18 @@
           <input style="border-radius: 10px;" type="text" placeholder="Your Phone">
         </div>
         <div  class="form-left">
-          <input type="text" placeholder="Your Message" style="height: 88px;border-radius: 10px;">
+          <input type="text" placeholder="Your Message" style="padding-bottom: 125px;border-radius: 10px;">
         </div>
       </div>
-      <input type="submit" value="send"
-        style="background-color: crimson; margin: 30px 0px 50px 0px; width: 60px; border-radius: 10px;">
+      <input type="submit" value="Send"
+        style="background-color: crimson; margin: 50px 0px 70px 0px; width: 100px; border-radius: 10px; font-size: 20px; color: white;">
     </form>
   </div>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark" class="footer">
     <div class="container-fluid">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="https://www.facebook.com/profile.php?id=100053744499982">
             <i class="fa-brands fa-facebook"></i>
           </a>
         </li>
@@ -114,7 +159,7 @@
           </a>
         </li>
       </ul>
-      <a style="border:3px solid red; border-radius: 10px;" class="navbar-brand" href="#">
+      <a style="border:3px solid red; border-radius: 10px; background-color: gray; padding: 0px 20px;" class="navbar-brand" href="#">
         Back To Top
       </a>
     </div>
