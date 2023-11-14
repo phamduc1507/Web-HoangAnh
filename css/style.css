@@ -110,12 +110,10 @@ table {
 .form-right input:last-child{
 	margin-bottom: 0px;
 }
-.img-left{
-	width: 50%;
-}
-.img-left img{
-	width: 240px;
-	height: 400px;
+
+#About .img{
+	width: 300px;
+	height: 450px;
 	border-radius: 10px;
 }
 .intro li{
